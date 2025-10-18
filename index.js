@@ -1,10 +1,11 @@
 /*Условные операторы. 
 Необходимо написать команду, которая спрашивает возраст пользователя через prompt()*/
-let accessAllowed;
-let age=prompt('Каков твой возраст?', '');
-if (age<18) {
-    accessAllowed='Доступ запрещён!';
-} else if (age>=18) {
-    accessAllowed='Доступ разрешён!';
+let age = prompt("Каков твой возраст?");
+if (age<18){
+    alert("Доступ запрещён!");
+} if (age>=18) {
+    alert('Доступ разрешён!');
 }
-console.log(accessAllowed);
+//тернарный оператор
+let isNowAge=prompt('Каков твой возраст?');
+alert(isNowAge,18?"Доступ запрещён!":"Доступ разрешён!");
